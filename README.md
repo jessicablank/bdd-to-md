@@ -13,11 +13,7 @@ Provide the generator command with a path containing the feature spec files, and
 Example:
 
 ```bash
-node cli.js –featuresPath example-features –markdownFilePath FEATURES.md
+node cli.js --featuresPath example-features --markdownFilePath FEATURES.md
 ```
 
-or, by using aliases in arguments
-
-```bash
-node cli.js -f features -m FEATURES.md
-```
+This will result in the .feature files in the example-features folder being combined into one file. See the example result at [FEATURES.md](FEATURES.md)
