@@ -1,10 +1,10 @@
 # bdd-to-md
 
-This cli tool scans specifed folder for BDD feature spec files, written in Gherkin, and generates a markdown file out of them.
+This cli tool scans for BDD feature spec files, written in Gherkin, and generates a markdown file out of them. Note this is converting the gherkin file itself and not the test output. 
 
 ## Dependencies
 
-The package defines `gherkin` as a peer-dependency, so you need to install it separately in your project.
+`npm i` to install dependencies. 
 
 ## Usage
 
@@ -13,11 +13,11 @@ Provide the generator command with a path containing the feature spec files, and
 Example:
 
 ```bash
-bdd-to-md --featuresPath features --markdownFilePath FEATURES.md
+node cli.js –featuresPath example-features –markdownFilePath FEATURES.md
 ```
 
 or, by using aliases in arguments
 
 ```bash
-bdd-to-md -f features -m FEATURES.md
+node cli.js -f features -m FEATURES.md
 ```
